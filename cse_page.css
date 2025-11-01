@@ -1,0 +1,486 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            
+        }
+
+        .cover {
+            background: #ffffff;
+            color: white;
+            
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            position: relative;
+            
+            border-radius: 6px;
+            height: max-content;
+        }
+
+
+        .title {
+            background: #6679EE;
+            display: flex;
+            padding: 5px 0px;
+            justify-content: space-around;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+            height: 100%;
+        }
+
+        .university{
+            display: flex;
+            align-items: center;
+        }
+
+        .university-logo {
+            width: 45px;
+            height: 45px;
+            background-color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+
+        .university-logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            padding: 3px;
+        }
+
+        .university-name {
+            font-size: 18px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            line-height: 1;
+            white-space: nowrap;
+        }
+
+        .department {
+            display: flex;
+            align-items: center;
+        }
+
+        .department-logo {
+            width: 40px;
+            height: 40px;
+            background-color: white;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 12px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+
+        .department-logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .department-name {
+            font-size: 16px;
+            font-weight: 500;
+            letter-spacing: 0.3px;
+            line-height: 1;
+            white-space: nowrap;
+        }
+
+         .nav-container {
+            background: #ffffff;
+            color: black;
+            border-radius: 8px;
+            padding: 0 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .main-nav {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            height: 50px;
+            align-items: center;
+        }
+
+        .main-nav li {
+            position: relative;
+        }
+
+        .main-nav a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            padding: 0 20px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            font-size: 15px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            border-bottom: 3px solid transparent;
+        }
+
+        .main-nav a:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-bottom: 3px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .nav-separator {
+            color: rgba(255, 255, 255, 0.4);
+            padding: 0 5px;
+            font-weight: 300;
+        }
+
+       
+        .has-dropdown:hover .dropdown {
+            display: block;
+        }
+
+        .dropdown {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: white;
+            min-width: 180px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            border-radius: 0 0 6px 6px;
+            z-index: 1000;
+        }
+
+        .dropdown li {
+            list-style: none;
+            width: 100%;
+        }
+
+        .dropdown a {
+            color: #333;
+            padding: 12px 20px;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .dropdown a:hover {
+            background-color: #f5f5f5;
+            border-bottom: 1px solid #f0f0f0;
+            color: #1a3a8f;
+        }
+
+     .orientation-banner {
+    position: relative;
+    height: 400px;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwOSCP5pWXPxV8ZZMsAOji-Fd3PrELNyt6BrtjMaPTrmjzGVtAiJRliPS3T5fLDqW9kSY&usqp=CAU');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0);
+}
+
+.banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(26, 57, 143, 0.245) 0%, rgba(42, 77, 168, 0.5) 100%);
+    z-index: 1;
+}
+
+.banner-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.banner-title {
+    color: white;
+    font-size: 42px;
+    font-weight: 700;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    letter-spacing: 1px;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.welcome-section {
+    background: white;
+    padding: 30px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.section-header h2 {
+    color: #1a3a8f;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.section-header h3 {
+    color: #333;
+    font-size: 18px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.content-wrapper {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.photo-container {
+    flex: 0 0 200px;
+}
+
+.chairman-photo {
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 4px;
+    border: 2px solid #e0e0e0;
+}
+
+.message-content {
+    flex: 1;
+}
+
+.message-text {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.read-more {
+    color: #1a3a8f;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+.signature {
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+}
+
+.name {
+    font-size: 16px;
+    font-weight: bold;
+    color: #1a3a8f;
+    margin-bottom: 5px;
+}
+
+.designation {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+}
+
+.about-department {
+    background: white;
+    padding: 40px;
+    margin: 30px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+.about-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.about-header h2 {
+    color: #1a3a8f;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+.about-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.about-text {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #333;
+    text-align: justify;
+    margin-bottom: 25px;
+}
+
+.read-more-link {
+    display: inline-block;
+    color: #1a3a8f;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 8px 0;
+    transition: all 0.3s ease;
+}
+
+.read-more-link:hover {
+    color: #2a4da8;
+    transform: translateX(5px);
+}
+
+
+
+.university-footer {
+    background: linear-gradient(135deg, #1a3a8f 0%, #2a4da8 100%);
+    color: white;
+    padding: 40px 0 20px 0;
+    margin-top: 50px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-main {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.footer-info {
+    flex: 1;
+    max-width: 300px;
+}
+
+.university-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.address {
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.contact-info p {
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.contact-info strong {
+    color: #fff;
+}
+
+.footer-links {
+    display: flex;
+    gap: 50px;
+    flex: 2;
+    justify-content: flex-end;
+}
+
+.link-column h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: white;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    padding-bottom: 5px;
+}
+
+.link-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.link-column li {
+    margin-bottom: 10px;
+}
+
+.link-column a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.link-column a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    margin-top: 30px;
+}
+
+.separator {
+    height: 1px;
+    background: rgba(255, 255, 255, 0.3);
+    margin-bottom: 20px;
+}
+
+.bottom-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyright {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0;
+}
+
+.research-link {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 8px 15px;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+.research-link:hover {
+    background: rgba(255, 255, 255, 0.2);
+    text-decoration: none;
+}
+
